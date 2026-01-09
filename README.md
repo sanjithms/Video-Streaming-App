@@ -11,15 +11,15 @@ A full-stack MERN application that enables secure video uploads, real-time conte
 
 ### 1. Video Playing Output
 The secure entry point featuring a cyberpunk-inspired glassmorphism UI. Users can register or login to their specific workspace.
-<img width="100%" alt="Empty Dashboard" src="https://github.com/user-attachments/assets/d20a3c98-db32-4883-9427-70055700e314">
+<img width="100%" alt="Login Screen" src="https://github.com/user-attachments/assets/a766d4cd-f729-43fd-b46a-5f9a897dc5d4">
 
 ### 2. Content Library (Dashboard)
 The main interface displaying the grid of uploaded videos. Features include status badges (Safe/Flagged), real-time processing indicators, and hover animations.
-<img width="100%" alt="Active Dashboard" src="https://github.com/user-attachments/assets/ebb31073-adec-4915-9a59-505a4c2aada7">
+<img width="100%" alt="Empty Dashboard" src="https://github.com/user-attachments/assets/d20a3c98-db32-4883-9427-70055700e314">
 
 ### 3. Empty State & Upload
 The initial view for new workspaces, featuring the drag-and-drop upload zone and a clean zero-data state.
-<img width="100%" alt="Login Screen" src="https://github.com/user-attachments/assets/a766d4cd-f729-43fd-b46a-5f9a897dc5d4">
+<img width="100%" alt="Active Dashboard" src="https://github.com/user-attachments/assets/ebb31073-adec-4915-9a59-505a4c2aada7">
 
 ---
 
