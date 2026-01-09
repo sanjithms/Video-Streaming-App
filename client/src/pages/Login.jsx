@@ -137,7 +137,8 @@ const Login = () => {
     e.preventDefault();
     try {
       if (isRegistering) {
-        await axios.post('http://localhost:5000/api/auth/register', {
+        // UPDATED: Uses dynamic API URL
+        await axios.post(`${import.meta.env.VITE_API_URL}/api/auth/register`, {
           username,
           password,
           organizationId: orgId || 'MyOrg'
@@ -145,6 +146,8 @@ const Login = () => {
         alert('Registration successful! Please login.');
         setIsRegistering(false);
       } else {
+        // The login function inside AuthContext handles the API call for logging in.
+        // Make sure you update AuthContext.jsx as well!
         await login(username, password);
         navigate('/dashboard');
       }
@@ -153,7 +156,6 @@ const Login = () => {
       alert('Authentication failed. Check credentials.');
     }
   };
-
   return (
     <div style={styles.container}>
       

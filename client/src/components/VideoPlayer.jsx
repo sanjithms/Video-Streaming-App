@@ -7,7 +7,7 @@ const VideoPlayer = () => {
   const { token } = useContext(AuthContext);
   const navigate = useNavigate();
 
-  const videoUrl = `http://localhost:5000/api/videos/stream/${id}?token=${token}`;
+  const videoUrl = `${import.meta.env.VITE_API_URL}/api/videos/stream/${id}?token=${token}`;
 
   // --- Styles Object for Cyberpunk Theme ---
   const styles = {

@@ -5,7 +5,7 @@ import { AuthContext } from '../context/AuthContext';
 import UploadForm from '../components/UploadForm';
 import { Link } from 'react-router-dom';
 
-const socket = io('http://localhost:5000');
+const socket = io(import.meta.env.VITE_API_URL);
 
 const Dashboard = () => {
   const { user, token, logout } = useContext(AuthContext);
@@ -144,7 +144,8 @@ const Dashboard = () => {
 
   const fetchVideos = async () => {
     try {
-      const res = await axios.get('http://localhost:5000/api/videos', {
+      // CHANGED: Uses VITE_API_URL from your .env file
+      const res = await axios.get(`${import.meta.env.VITE_API_URL}/api/videos`, {
         headers: { Authorization: `Bearer ${token}` }
       });
       setVideos(res.data);
